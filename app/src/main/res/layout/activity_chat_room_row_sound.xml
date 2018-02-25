@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutContextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <com.drsaina.mars.testnotification.Utill.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutContextMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_border_user"
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="RtlHardcoded,UnusedAttribute">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressBarSound"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp" />
+
+                    <ImageButton
+                        android:id="@+id/btnplaysound"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="پخش صدا"
+                        android:elevation="0dp"
+                        android:layoutDirection="rtl"
+                        android:src="@drawable/ic_play_button"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:id="@+id/seekbarplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="5dp"
+                        android:max="99"
+                        android:paddingLeft="8dp"
+                        android:progressDrawable="@drawable/red_scrubber_progress"
+                        android:paddingRight="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="52dp"
+                >
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtinfoSound"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--tools:ignore="HardcodedText" -->
+                    <!--android:text="12/"-->
+                    <!--/>-->
+
+                <TextView
+                    android:id="@+id/txtinfoSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical|center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:textColor="@color/accent_500"
+                    android:textStyle="bold"
+                    android:text=""
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+
+                <TextView
+                    android:id="@+id/datemessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="2016_10_12_11_30"
+                    android:textColor="@color/char_user_date"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/imgMessageStatus"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    app:srcCompat="@drawable/ic_message_waite"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
